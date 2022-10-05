@@ -1,4 +1,11 @@
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  // 768px
+  @media screen and (min-width: 768px) {
+    width: auto;
+  }
 }

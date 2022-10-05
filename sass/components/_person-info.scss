@@ -17,4 +17,9 @@
     text-align: center;
     color: var(--color-grey);
   }
+
+  &__social-media {
+    display: flex;
+    justify-content: center;
+  }
 }

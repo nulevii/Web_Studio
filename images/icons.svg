@@ -70,5 +70,8 @@
 <path  d="M4 1h24c2.209 0 4 1.791 4 4v22c0 2.209-1.791 4-4 4h-24c-2.209 0-4-1.791-4-4v-22c0-2.209 1.791-4 4-4z"></path>
 <path fill="#fff"   stroke-width="0.4" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter"  d="M7.914 16.503l-0.138-0.131-2.067 1.958 7.282 6.947 15.298-14.594-2.053-1.959-13.245 12.623-5.077-4.844z"></path>
 </symbol>
+<symbol id="icon-burger_menu" viewBox="0 0 32 32">
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+</symbol>
 </defs>
 </svg>

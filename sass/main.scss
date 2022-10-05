@@ -5,6 +5,7 @@
 //base
 @import "./base/reset";
 @import "./base/common";
+@import "./base/container";
 @import "./base/buttons";
 @import "./base/section-caption";
 @import "./base/social-media";
@@ -28,8 +29,8 @@
 @import "./components/.our-team-list";
 @import "./components/person-info";
 
-@import "./components/our-clients-element";
 @import "./components/our-clients-list";
+@import "./components/our-clients-element";
 
 @import "./components/footer-contacts";
 @import "./components/adress-info";
@@ -42,9 +43,12 @@
 @import "./components/portfolio/portfolio-element";
 @import "./components/portfolio/element-desription";
 
+@import "./components/slide-socials";
+
 //layouts
 @import "./layouts/page-header";
 @import "./layouts/navigation";
 @import "./layouts/page-main";
 @import "./layouts/modal-window";
 @import "./layouts/page-footer";
+@import "./components/slide-bar";

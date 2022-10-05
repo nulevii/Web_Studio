@@ -1,0 +1,30 @@
+.slide-social {
+  display: flex;
+}
+.slide-social__item {
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  @media screen and (max-width: 400px) {
+    &:not(:last-child) {
+      padding-right: 1px;
+    }
+    &:not(:first-child) {
+      padding-left: 1px;
+    }
+  }
+}
+
+.slide-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--color-blue);
+}

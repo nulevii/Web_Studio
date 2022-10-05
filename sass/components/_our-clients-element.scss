@@ -1,9 +1,9 @@
 .our-clients-element {
-  width: 170px;
-  height: 92px;
-
+  flex-grow: 1;
+  width: 40%;
   &__link {
-    width: 170px;
+    // min-width: 240px;
+
     height: 92px;
     display: flex;
     align-items: center;
@@ -25,6 +25,17 @@
 
   &__image {
     display: block;
+    position: absolute;
     fill: currentColor;
+  }
+  @media screen and (min-width: 768px) {
+    width: 30%;
+    min-width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-grow: 0;
+    min-width: 170px;
+    width: 170px;
   }
 }

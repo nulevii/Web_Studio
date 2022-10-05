@@ -1,0 +1,101 @@
+.slide-bar {
+  visibility: hidden;
+  padding: 48px 40px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--color-white);
+
+  transition: transform, visibility;
+  transition-duration: var(--default-animation-duration);
+  transition-duration: var(--default-animation-duration);
+
+  @media screen and (max-width: 400px) {
+    padding: 48px 10px;
+  }
+}
+.is-open.slide-bar {
+  visibility: visible;
+  transform: translateX(0%);
+  .slide-bar-button {
+    position: absolute;
+    top: 15px;
+    right: 11px;
+    cursor: pointer;
+
+    &:hover .slide-bar-button__image {
+      fill: var(--color-dark-blue);
+    }
+    &:focus .slide-bar-button__image {
+      fill: var(--color-dark-blue);
+    }
+  }
+
+  .js-close-menu {
+  }
+  .slide-bar-button__image {
+    transition: fill;
+    transition-duration: var(--default-animation-duration);
+    transition-timing-function: var(--default-animation);
+  }
+
+  .slide-bar-navigation {
+    margin-bottom: auto;
+  }
+
+  .slide-bar-navigation-list {
+  }
+  .slide-bar-navigation-list__link {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    color: var(--color-almost-black);
+
+    &:hover {
+      color: var(--color-blue);
+    }
+  }
+  .navigation-list__link--selected {
+    color: var(--color-blue);
+  }
+  .slide-bar-header-contacts {
+  }
+  .slide-bar-header-contacts__phone {
+    display: block;
+    margin-bottom: 32px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(34 / 32);
+
+    letter-spacing: 0.02em;
+
+    color: var(--color-blue);
+  }
+  .slide-bar-header-contacts__email {
+    display: block;
+    margin-bottom: 64px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: var(--color-grey);
+    &:hover {
+      color: var(--color-blue);
+    }
+  }
+  .slide-bar-header-contacts__icon {
+  }
+}

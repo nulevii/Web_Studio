@@ -92,7 +92,10 @@
 
   &__policy-text {
     font-size: var(--default-font-size);
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    color: #757575;
 
     color: var(--color-grey);
   }
@@ -104,5 +107,14 @@
   }
   &__input:focus {
     border-color: var(--color-blue);
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__policy-text {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
   }
 }

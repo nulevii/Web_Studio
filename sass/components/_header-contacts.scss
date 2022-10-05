@@ -1,36 +1,51 @@
 .header-contacts {
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
+  display: none;
 
-  &__element {
+  @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
+    gap: 10px;
+    flex-direction: column;
 
+    margin-left: auto;
+
+    &__element {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.02em;
+      text-decoration: none;
+
+      color: var(--color-grey);
+
+      transition: color;
+      transition-duration: var(--default-animation-duration);
+      transition-timing-function: var(--default-animation);
+    }
+
+    &__element:hover,
+    &__element:focus {
+      color: var(--color-blue);
+    }
+
+    &__icon {
+      fill: currentColor;
+      margin-right: 10px;
+      line-height: 14px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
     height: 16px;
     padding: 32px 0;
 
-    font-weight: 500;
-    line-height: 1.143;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
-    color: var(--color-grey);
-
-    transition: color;
-    transition-duration: var(--default-animation-duration);
-    transition-timing-function: var(--default-animation);
-  }
-
-  &__element:hover,
-  &__element:focus {
-    color: var(--color-blue);
-  }
-
-  &__icon,
-  &__icon {
-    fill: currentColor;
-    margin-right: 10px;
-    line-height: 14px;
+    &__element {
+      font-size: 16px;
+      line-height: 1.143;
+    }
   }
 }

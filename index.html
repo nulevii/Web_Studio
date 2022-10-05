@@ -17,9 +17,19 @@
 
 <body>
   <header class="page-header">
-    <div class="container page-header__container">
+    <div class="container page-header__container ">
+
+
+      <!-- navigation -->
       <nav class="navigation">
         <a class="logo" href="./index.html"> <span class="logo__first-word">Web</span>Studio</a>
+        <button class="slide-bar-button js-open-menu" type="button">
+          <svg class="slide-bar-button__image" height="40" width="40">
+            <use href="./images/icons.svg#icon-burger_menu" />
+          </svg>
+        </button>
+
+
         <ul class="navigation-list">
           <li><a class="navigation-list__link navigation-list__link--selected" href="./index.html">Студія</a></li>
           <li><a class="navigation-list__link" href="./portfolio.html">Портфоліо</a></li>
@@ -52,6 +62,8 @@
       <button data-modal-open class="submit-button" type="button">Замовити послугу</button>
     </section>
     <div data-modal class="modal-window-container is-hidden display-none">
+
+      <!-- modal window -->
       <div class="modal-window">
         <button type="button" data-modal-close class="close-button modal-window__close-button">
 
@@ -231,7 +243,7 @@
             <div class="person-info">
               <h3 class="person-info__caption">Ольга Рєпіна</h3>
               <p class="person-info__description">Frontend Developer</p>
-              <ul class="social-media">
+              <ul class="social-media person-info__social-media">
                 <li class="social-media__item">
                   <a href="" class="social-media__link">
                     <svg class="social-media__image" width="20" height="20">
@@ -270,7 +282,7 @@
             <div class="person-info">
               <h3 class="person-info__caption">Микола Тарасов</h3>
               <p class="person-info__description">Marketing</p>
-              <ul class="social-media">
+              <ul class="social-media person-info__social-media">
                 <li class="social-media__item">
                   <a href="" class="social-media__link">
                     <svg class="social-media__image" width="20" height="20">
@@ -309,7 +321,7 @@
             <div class="person-info">
               <h3 class="person-info__caption">Михайло Єрмаков</h3>
               <p class="person-info__description">UI Designer</p>
-              <ul class="social-media">
+              <ul class="social-media person-info__social-media">
                 <li class="social-media__item">
                   <a href="" class="social-media__link">
                     <svg class="social-media__image" width="20" height="20">
@@ -466,8 +478,63 @@
       </div>
     </div>
   </footer>
+  <!-- slidebar -->
+  <div class="slide-bar js-menu-container">
+    <button class=" slide-bar-button js-close-menu" type="button">
+      <svg class="slide-bar-button__image" height="40" width="40">
+        <use href="./images/icons.svg#modal-close-icon" />
+      </svg>
+    </button>
+    <nav class="slide-bar-navigation">
 
+      <ul class="slide-bar-navigation-list">
+        <li><a class="slide-bar-navigation-list__link navigation-list__link--selected" href="./index.html">Студія</a>
+        </li>
+        <li><a class="slide-bar-navigation-list__link" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="slide-bar-navigation-list__link" href="">Контакти</a></li>
+      </ul>
+    </nav>
+    <ul class="slide-bar-header-contacts">
+      <li>
+        <a class="slide-bar-header-contacts__phone" href="tel:+38-096-111-11-11">
+          +38 096 111 11 11</a>
+      </li>
+      <li>
+        <a class="slide-bar-header-contacts__email" href="mailto:info@devstudio.com">
+          info@devstudio.com</a>
+      </li>
+
+    </ul>
+    <ul class="slide-social">
+      <li class="slide-social__item ">
+        <a href="" class="slide-social__link ">
+          Instagram
+        </a>
+      </li>
+      <li class="slide-social__item ">
+        <a href="" class="slide-social__link ">
+          Twitter
+        </a>
+      </li>
+      <li class="slide-social__item ">
+        <a href="" class="slide-social__link ">
+          Facebook
+        </a>
+      </li>
+      <li class="slide-social__item ">
+        <a href="" class="slide-social__link ">
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="./js/sidebar.js"></script>
   <script src="./js/modal.js"></script>
 </body>
+
 
 </html>

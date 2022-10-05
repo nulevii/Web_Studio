@@ -32,3 +32,23 @@
     background-color: var(--color-dark-blue);
   }
 }
+
+.slide-bar-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &__image {
+    fill: var(--color-almost-black);
+    transition: fill;
+    transition-duration: var(--default-animation-duration);
+    transition-timing-function: var(--default-animation);
+  }
+  &__image:hover {
+    fill: var(--color-blue);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

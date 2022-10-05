@@ -1,11 +1,13 @@
 .fiture-element {
   width: 270px;
-
+  flex-grow: 1;
+  min-width: 100%;
   &__svg-holder {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    width: 100%;
+
     height: 120px;
     margin-bottom: 30px;
     background: var(--color-dark-white);
@@ -16,6 +18,7 @@
     font-size: var(--default-font-size);
     line-height: 1.143;
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__description {
@@ -23,5 +26,16 @@
     margin: 0;
     margin-top: 10px;
     color: var(--color-grey);
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 40%;
+    &__caption {
+      text-align: start;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: auto;
   }
 }

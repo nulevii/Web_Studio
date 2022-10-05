@@ -2,10 +2,11 @@
   padding: 20px 24px;
   border: 1px solid var(--color-border-two);
   border-top: none;
+  flex-grow: 1;
 
   &__name {
     margin-bottom: 4px;
-
+    display: block;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;

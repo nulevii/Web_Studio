@@ -1,6 +1,14 @@
 .section-caption {
-  font-size: 36px;
-  line-height: 1.166;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: calc(32.81 / 28);
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.166;
+    margin-bottom: 50px;
+  }
 }

@@ -28,8 +28,8 @@
 
 .modal-window {
   position: fixed;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+
   top: 50%;
   left: 50%;
   border-radius: 4px;
@@ -68,5 +68,12 @@
   &__close-button:hover,
   &__close-button:focus {
     fill: var(--color-blue);
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
   }
 }
