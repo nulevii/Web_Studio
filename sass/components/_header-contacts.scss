@@ -22,6 +22,16 @@
       transition: color;
       transition-duration: var(--default-animation-duration);
       transition-timing-function: var(--default-animation);
+
+      &.email .header-contacts__icon {
+        height: 10px;
+        width: 14px;
+      }
+
+      &.phone .header-contacts__icon {
+        height: 14px;
+        width: 10px;
+      }
     }
 
     &__element:hover,
@@ -46,6 +56,15 @@
     &__element {
       font-size: 16px;
       line-height: 1.143;
+      &.email .header-contacts__icon {
+        height: 12px;
+        width: 16px;
+      }
+
+      &.phone .header-contacts__icon {
+        height: 16px;
+        width: 10px;
+      }
     }
   }
 }

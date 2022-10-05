@@ -339,6 +339,14 @@ body {
     -webkit-transition-timing-function: var(--default-animation);
             transition-timing-function: var(--default-animation);
   }
+  .header-contacts__element.email .header-contacts__icon {
+    height: 10px;
+    width: 14px;
+  }
+  .header-contacts__element.phone .header-contacts__icon {
+    height: 14px;
+    width: 10px;
+  }
   .header-contacts__element:hover, .header-contacts__element:focus {
     color: var(--color-blue);
   }
@@ -364,6 +372,14 @@ body {
   .header-contacts__element {
     font-size: 16px;
     line-height: 1.143;
+  }
+  .header-contacts__element.email .header-contacts__icon {
+    height: 12px;
+    width: 16px;
+  }
+  .header-contacts__element.phone .header-contacts__icon {
+    height: 16px;
+    width: 10px;
   }
 }
 
@@ -1072,6 +1088,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
@@ -1176,11 +1195,23 @@ body {
 }
 
 .slide-social__link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--color-blue);
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-duration: var(--default-animation-duration);
+          transition-duration: var(--default-animation-duration);
+  transition-duration: var(--default-animation-duration);
+}
+.slide-social__link:hover {
+  color: var(--color-dark-blue);
+}
+.slide-social__link:focus {
+  color: var(--color-dark-blue);
 }
 
 .page-header {
@@ -1361,6 +1392,89 @@ body {
           transition-duration: var(--default-animation-duration);
   transition-duration: var(--default-animation-duration);
 }
+.slide-bar .slide-bar-button {
+  position: absolute;
+  top: 15px;
+  right: 11px;
+  cursor: pointer;
+}
+.slide-bar .slide-bar-button:hover .slide-bar-button__image {
+  fill: var(--color-dark-blue);
+}
+.slide-bar .slide-bar-button:focus .slide-bar-button__image {
+  fill: var(--color-dark-blue);
+}
+.slide-bar .slide-bar-button__image {
+  -webkit-transition: fill;
+  transition: fill;
+  -webkit-transition-duration: var(--default-animation-duration);
+          transition-duration: var(--default-animation-duration);
+  -webkit-transition-timing-function: var(--default-animation);
+          transition-timing-function: var(--default-animation);
+}
+.slide-bar .slide-bar-navigation {
+  margin-bottom: auto;
+}
+.slide-bar .slide-bar-navigation-list__link {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  color: var(--color-almost-black);
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-duration: var(--default-animation-duration);
+          transition-duration: var(--default-animation-duration);
+  transition-duration: var(--default-animation-duration);
+}
+.slide-bar .slide-bar-navigation-list__link:hover {
+  color: var(--color-blue);
+}
+.slide-bar .navigation-list__link--selected {
+  color: var(--color-blue);
+}
+.slide-bar .slide-bar-header-contacts__phone {
+  display: block;
+  margin-bottom: 32px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.0625;
+  letter-spacing: 0.02em;
+  color: var(--color-blue);
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-duration: var(--default-animation-duration);
+          transition-duration: var(--default-animation-duration);
+  transition-duration: var(--default-animation-duration);
+}
+.slide-bar .slide-bar-header-contacts__phone:hover {
+  color: var(--color-dark-blue);
+}
+.slide-bar .slide-bar-header-contacts__phone:focus {
+  color: var(--color-dark-blue);
+}
+.slide-bar .slide-bar-header-contacts__email {
+  display: block;
+  margin-bottom: 64px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+  -webkit-transition: color;
+  transition: color;
+  -webkit-transition-duration: var(--default-animation-duration);
+          transition-duration: var(--default-animation-duration);
+  transition-duration: var(--default-animation-duration);
+}
+.slide-bar .slide-bar-header-contacts__email:hover {
+  color: var(--color-blue);
+}
 @media screen and (max-width: 400px) {
   .slide-bar {
     padding: 48px 10px;
@@ -1371,66 +1485,4 @@ body {
   visibility: visible;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-}
-.is-open.slide-bar .slide-bar-button {
-  position: absolute;
-  top: 15px;
-  right: 11px;
-  cursor: pointer;
-}
-.is-open.slide-bar .slide-bar-button:hover .slide-bar-button__image {
-  fill: var(--color-dark-blue);
-}
-.is-open.slide-bar .slide-bar-button:focus .slide-bar-button__image {
-  fill: var(--color-dark-blue);
-}
-.is-open.slide-bar .slide-bar-button__image {
-  -webkit-transition: fill;
-  transition: fill;
-  -webkit-transition-duration: var(--default-animation-duration);
-          transition-duration: var(--default-animation-duration);
-  -webkit-transition-timing-function: var(--default-animation);
-          transition-timing-function: var(--default-animation);
-}
-.is-open.slide-bar .slide-bar-navigation {
-  margin-bottom: auto;
-}
-.is-open.slide-bar .slide-bar-navigation-list__link {
-  display: block;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  letter-spacing: 0.02em;
-  margin-bottom: 32px;
-  color: var(--color-almost-black);
-}
-.is-open.slide-bar .slide-bar-navigation-list__link:hover {
-  color: var(--color-blue);
-}
-.is-open.slide-bar .navigation-list__link--selected {
-  color: var(--color-blue);
-}
-.is-open.slide-bar .slide-bar-header-contacts__phone {
-  display: block;
-  margin-bottom: 32px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.0625;
-  letter-spacing: 0.02em;
-  color: var(--color-blue);
-}
-.is-open.slide-bar .slide-bar-header-contacts__email {
-  display: block;
-  margin-bottom: 64px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  color: var(--color-grey);
-}
-.is-open.slide-bar .slide-bar-header-contacts__email:hover {
-  color: var(--color-blue);
 }/*# sourceMappingURL=main.css.map */

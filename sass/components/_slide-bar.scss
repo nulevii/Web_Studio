@@ -16,13 +16,6 @@
   transition-duration: var(--default-animation-duration);
   transition-duration: var(--default-animation-duration);
 
-  @media screen and (max-width: 400px) {
-    padding: 48px 10px;
-  }
-}
-.is-open.slide-bar {
-  visibility: visible;
-  transform: translateX(0%);
   .slide-bar-button {
     position: absolute;
     top: 15px;
@@ -64,6 +57,10 @@
     &:hover {
       color: var(--color-blue);
     }
+
+    transition: color;
+    transition-duration: var(--default-animation-duration);
+    transition-duration: var(--default-animation-duration);
   }
   .navigation-list__link--selected {
     color: var(--color-blue);
@@ -81,6 +78,16 @@
     letter-spacing: 0.02em;
 
     color: var(--color-blue);
+    &:hover {
+      color: var(--color-dark-blue);
+    }
+    &:focus {
+      color: var(--color-dark-blue);
+    }
+
+    transition: color;
+    transition-duration: var(--default-animation-duration);
+    transition-duration: var(--default-animation-duration);
   }
   .slide-bar-header-contacts__email {
     display: block;
@@ -95,7 +102,17 @@
     &:hover {
       color: var(--color-blue);
     }
+
+    transition: color;
+    transition-duration: var(--default-animation-duration);
+    transition-duration: var(--default-animation-duration);
   }
-  .slide-bar-header-contacts__icon {
+
+  @media screen and (max-width: 400px) {
+    padding: 48px 10px;
   }
+}
+.is-open.slide-bar {
+  visibility: visible;
+  transform: translateX(0%);
 }

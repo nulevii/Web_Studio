@@ -21,6 +21,11 @@
     <div class="container page-header__container">
       <nav class="navigation">
         <a class="logo" href="./index.html"> <span class="logo__first-word">Web</span>Studio</a>
+        <button class="slide-bar-button js-open-menu" type="button">
+          <svg class="slide-bar-button__image" height="40" width="40">
+            <use href="./images/icons.svg#icon-burger_menu" />
+          </svg>
+        </button>
         <ul class="navigation-list">
           <li><a class="navigation-list__link" href="./index.html">Студія</a></li>
           <li><a class="navigation-list__link navigation-list__link--selected" href="./portfolio.html">Портфоліо</a>
@@ -64,8 +69,22 @@
           <li class="portfolio-element">
             <a href="" class="portfolio-element__link">
               <div class="animation-container">
-                <img src="./images/portfolio/technokryak_site.jpg" alt="Технокряк" class="portfolio-element__image"
-                  height="294" width="370">
+                <picture>
+                  <source srcset="
+                      ./images/portfolio/l/project1-l.jpg    1x,
+                      ./images/portfolio/l/project1-l@2x.jpg 2x
+                    " media="(min-width: 1200px)" />
+                  <source srcset="
+                      ./images/portfolio/m/project1-m.jpg    1x,
+                      ./images/portfolio/m/project1-m@2x.jpg 2x
+                    " media="(min-width: 768px)" />
+                  <source srcset="
+                      ./images/portfolio/s/project1-s.jpg    1x,
+                      ./images/portfolio/s/project1-s@2x.jpg 2x
+                    " media="(max-width: 767px)" />
+                  <img class="portfolio-element__image" src="./images/project/s/project1-s.jpg" alt="poster"
+                    width="370" />
+                </picture>
                 <p class="animation-container__element">Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                   приватну особу.</p>
@@ -79,8 +98,22 @@
           <li class="portfolio-element">
             <a href="" class="portfolio-element__link">
               <div class="animation-container" height="294" width="370">
-                <img src="./images/portfolio/basketboll-poster-design.jpg" alt="Постер New Orlean vs Golden Star"
-                  class="portfolio-element__image" height="294" width="370">
+                <picture>
+                  <source srcset="
+                        ./images/portfolio/l/project2-l.jpg    1x,
+                        ./images/portfolio/l/project2-l@2x.jpg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                        ./images/portfolio/m/project2-m.jpg    1x,
+                        ./images/portfolio/m/project2-m@2x.jpg 2x
+                      " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/portfolio/s/project2-s.jpg    1x,
+                        ./images/portfolio/s/project2-s@2x.jpg 2x
+                      " media="(max-width: 767px)" />
+                  <img class="portfolio-element__image" src="./images/portfolio/s/project2-s.jpg" alt="poster"
+                    width="370" />
+                </picture>
                 <p class="animation-container__element">Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                   приватну особу.</p>
@@ -94,8 +127,22 @@
           <li class="portfolio-element">
             <a href="" class="portfolio-element__link">
               <div class="animation-container" height="294" width="370">
-                <img src="./images/portfolio/seafood-design.jpg" alt="Ресторан Seafood" class="portfolio-element__image"
-                  height="294" width="370">
+                <picture>
+                  <source srcset="
+                        ./images/portfolio/l/project3-l.jpg    1x,
+                        ./images/portfolio/l/project3-l@2x.jpg 2x
+                      " media="(min-width: 1200px)" />
+                  <source srcset="
+                         ./images/portfolio/m/project3-m.jpg    1x,
+                         ./images/portfolio/m/project3-m@2x.jpg 2x
+                       " media="(min-width: 768px)" />
+                  <source srcset="
+                        ./images/portfolio/s/project3-s.jpg    1x,
+                        ./images/portfolio/s/project3-s@2x.jpg 2x
+                      " media="(max-width: 767px)" />
+                  <img class="portfolio-element__image" src="./images/project/s/project3-s.jpg" alt="poster"
+                    width="370" />
+                </picture>
                 <p class="animation-container__element">Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                   приватну особу.</p>
@@ -109,8 +156,22 @@
           <li class="portfolio-element">
             <a href="" class="portfolio-element__link">
               <div class="animation-container" height="294" width="370">
-                <img src="./images/portfolio/prime-marketing.jpg" alt="Проєкт Prime" class="portfolio-element__image"
-                  height="294" width="370">
+                <picture>
+                  <source srcset="
+                         ./images/portfolio/l/project4-l.jpg    1x,
+                         ./images/portfolio/l/project4-l@2x.jpg 2x
+                       " media="(min-width: 1200px)" />
+                  <source srcset="
+                         ./images/portfolio/m/project4-m.jpg    1x,
+                         ./images/portfolio/m/project4-m@2x.jpg 2x
+                       " media="(min-width: 768px)" />
+                  <source srcset="
+                         ./images/portfolio/s/project4-s.jpg    1x,
+                         ./images/portfolio/s/project4-s@2x.jpg 2x
+                       " media="(max-width: 767px)" />
+                  <img class="portfolio-element__image" src="./images/project/s/project4-s.jpg" alt="poster"
+                    width="370" />
+                </picture>
                 <p class="animation-container__element">Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                   приватну особу.</p>
@@ -124,8 +185,22 @@
           <li class="portfolio-element">
             <a href="" class="portfolio-element__link">
               <div class="animation-container" height="294" width="370">
-                <img src="./images/portfolio/boxes-app.jpg" alt="Проєкт Boxes" class="portfolio-element__image"
-                  height="294" width="370">
+                <picture>
+                  <source srcset="
+                         ./images/portfolio/l/project5-l.jpg    1x,
+                         ./images/portfolio/l/project5-l@2x.jpg 2x
+                       " media="(min-width: 1200px)" />
+                  <source srcset="
+                         ./images/portfolio/m/project5-m.jpg    1x,
+                         ./images/portfolio/m/project5-m@2x.jpg 2x
+                       " media="(min-width: 768px)" />
+                  <source srcset="
+                         ./images/portfolio/s/project5-s.jpg    1x,
+                         ./images/portfolio/s/project5-s@2x.jpg 2x
+                       " media="(max-width: 767px)" />
+                  <img class="portfolio-element__image" src="./images/project/s/project5-s.jpg" alt="poster"
+                    width="370" />
+                </picture>
                 <p class="animation-container__element">Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                   приватну особу.</p>
@@ -139,8 +214,22 @@
           <li class="portfolio-element">
             <a href="" class="portfolio-element__link">
               <div class="animation-container" height="294" width="370">
-                <img src="./images/portfolio/inspiration-site.jpg" alt="Inspiration has no Borders"
-                  class="portfolio-element__image" height="294" width="370">
+                <picture>
+                  <source srcset="
+                         ./images/portfolio/l/project6-l.jpg    1x,
+                         ./images/portfolio/l/project6-l@2x.jpg 2x
+                       " media="(min-width: 1200px)" />
+                  <source srcset="
+                         ./images/portfolio/m/project6-m.jpg    1x,
+                         ./images/portfolio/m/project6-m@2x.jpg 2x
+                       " media="(min-width: 768px)" />
+                  <source srcset="
+                         ./images/portfolio/s/project6-s.jpg    1x,
+                         ./images/portfolio/s/project6-s@2x.jpg 2x
+                       " media="(max-width: 767px)" />
+                  <img class="portfolio-element__image" src="./images/project/s/project6-s.jpg" alt="poster"
+                    width="370" />
+                </picture>
                 <p class="animation-container__element">Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                   приватну особу.</p>
@@ -154,8 +243,22 @@
           <li class="portfolio-element">
             <a href="" class="portfolio-element__link">
               <div class="animation-container" height="294" width="370">
-                <img src="./images/portfolio/limited-edition-design.jpg" alt="Видання Limited Edition"
-                  class="portfolio-element__image" height="294" width="370">
+                <picture>
+                  <source srcset="
+                         ./images/portfolio/l/project7-l.jpg    1x,
+                         ./images/portfolio/l/project7-l@2x.jpg 2x
+                       " media="(min-width: 1200px)" />
+                  <source srcset="
+                         ./images/portfolio/m/project7-m.jpg    1x,
+                         ./images/portfolio/m/project7-m@2x.jpg 2x
+                       " media="(min-width: 768px)" />
+                  <source srcset="
+                         ./images/portfolio/s/project7-s.jpg    1x,
+                         ./images/portfolio/s/project7-s@2x.jpg 2x
+                       " media="(max-width: 767px)" />
+                  <img class="portfolio-element__image" src="./images/project/s/project7-s.jpg" alt="poster"
+                    width="370" />
+                </picture>
                 <p class="animation-container__element">Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                   приватну особу.</p>
@@ -169,8 +272,22 @@
           <li class="portfolio-element">
             <a href="" class="portfolio-element__link">
               <div class="animation-container" height="294" width="370">
-                <img src="./images/portfolio/lab-marketing.jpg" alt="Проєкт LAB" class="portfolio-element__image"
-                  height="294" width="370">
+                <picture>
+                  <source srcset="
+                         ./images/portfolio/l/project8-l.jpg    1x,
+                         ./images/portfolio/l/project8-l@2x.jpg 2x
+                       " media="(min-width: 1200px)" />
+                  <source srcset="
+                         ./images/portfolio/m/project8-m.jpg    1x,
+                         ./images/portfolio/m/project8-m@2x.jpg 2x
+                       " media="(min-width: 768px)" />
+                  <source srcset="
+                         ./images/portfolio/s/project8-s.jpg    1x,
+                         ./images/portfolio/s/project8-s@2x.jpg 2x
+                       " media="(max-width: 767px)" />
+                  <img class="portfolio-element__image" src="./images/project/s/project8-s.jpg" alt="poster"
+                    width="370" />
+                </picture>
                 <p class="animation-container__element">Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                   приватну особу.</p>
@@ -184,8 +301,22 @@
           <li class="portfolio-element">
             <a href="" class="portfolio-element__link">
               <div class="animation-container" height="294" width="370">
-                <img src="./images/portfolio/growing-business-design.jpg" alt="Growing Business"
-                  class="portfolio-element__image" height="294" width="370">
+                <picture>
+                  <source srcset="
+                         ./images/portfolio/l/project9-l.jpg    1x,
+                         ./images/portfolio/l/project9-l@2x.jpg 2x
+                       " media="(min-width: 1200px)" />
+                  <source srcset="
+                         ./images/portfolio/m/project9-m.jpg    1x,
+                         ./images/portfolio/m/project9-m@2x.jpg 2x
+                       " media="(min-width: 768px)" />
+                  <source srcset="
+                         ./images/portfolio/s/project9-s.jpg    1x,
+                         ./images/portfolio/s/project9-s@2x.jpg 2x
+                       " media="(max-width: 767px)" />
+                  <img class="portfolio-element__image" src="./images/project/s/project9-s.jpg" alt="poster"
+                    width="370" />
+                </picture>
                 <p class="animation-container__element">Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                   приватну особу.</p>
@@ -269,7 +400,63 @@
       </div>
     </div>
   </footer>
+  <!-- slidebar -->
+  <div class="slide-bar js-menu-container">
+    <button class=" slide-bar-button js-close-menu" type="button">
+      <svg class="slide-bar-button__image" height="40" width="40">
+        <use href="./images/icons.svg#modal-close-icon" />
+      </svg>
+    </button>
+    <nav class="slide-bar-navigation">
 
+      <ul class="slide-bar-navigation-list">
+        <li><a class="slide-bar-navigation-list__link " href="./index.html">Студія</a>
+        </li>
+        <li><a class="slide-bar-navigation-list__link navigation-list__link--selected"
+            href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="slide-bar-navigation-list__link" href="">Контакти</a></li>
+      </ul>
+    </nav>
+    <ul class="slide-bar-header-contacts">
+      <li>
+        <a class="slide-bar-header-contacts__phone" href="tel:+38-096-111-11-11">
+          +38 096 111 11 11</a>
+      </li>
+      <li>
+        <a class="slide-bar-header-contacts__email" href="mailto:info@devstudio.com">
+          info@devstudio.com</a>
+      </li>
+
+    </ul>
+    <ul class="slide-social">
+      <li class="slide-social__item ">
+        <a href="" class="slide-social__link ">
+          Instagram
+        </a>
+      </li>
+      <li class="slide-social__item ">
+        <a href="" class="slide-social__link ">
+          Twitter
+        </a>
+      </li>
+      <li class="slide-social__item ">
+        <a href="" class="slide-social__link ">
+          Facebook
+        </a>
+      </li>
+      <li class="slide-social__item ">
+        <a href="" class="slide-social__link ">
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="./js/sidebar.js"></script>
+  <script src="./js/modal.js"></script>
 
   <script src="./js/modal.js"></script>
 </body>

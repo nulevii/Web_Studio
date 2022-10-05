@@ -38,15 +38,15 @@
       </nav>
       <ul class="header-contacts">
         <li>
-          <a class="header-contacts__element" href="mailto:info@devstudio.com">
-            <svg class="header-contacts__icon" height="12" width="16">
+          <a class="header-contacts__element email" href="mailto:info@devstudio.com">
+            <svg class="header-contacts__icon">
               <use href="./images/icons.svg#icon-envelope" />
             </svg>
             info@devstudio.com</a>
         </li>
         <li>
-          <a class="header-contacts__element" href="tel:+38-096-111-11-11">
-            <svg class="header-contacts__icon" height="16" width="10">
+          <a class="header-contacts__element phone" href="tel:+38-096-111-11-11">
+            <svg class="header-contacts__icon">
               <use href="./images/icons.svg#icon-smartphone" />
             </svg>+38 096 111 11 11</a>
         </li>
@@ -176,18 +176,27 @@
         <h2 class="section-caption">Чим ми займаємося</h2>
         <ul class="about-us-list">
           <li class="about-us-list__element">
-            <img class="about-us-list__image" src="./images/about_us/about_us_one.jpg" alt="Програмування" height="294"
-              width="370">
+            <img srcset="
+                                      ./images/about_us/direction-1-370.jpg 1x,
+                                      ./images/about_us/direction-1-740.jpg 2x
+                                      " src="./images/direction/direction-1-370.jpg" alt="Робота за компютером"
+              width="370" height="290" />
             <p class="about-us-list__caption">Десктопні додатки</p>
           </li>
           <li class="about-us-list__element">
-            <img class="about-us-list__image" src="./images/about_us/about_us_two.jpg" alt="Мобільна розробка"
-              height="294" width="370">
+            <img srcset="
+                          ./images/about_us/direction-2-370.jpg 1x,
+                          ./images/about_us/direction-2-740.jpg 2x
+                          " src="./images/direction/direction-1-370.jpg" alt="Робота за компютером" width="370"
+              height="290" />
             <p class="about-us-list__caption">Мобільні додатки</p>
           </li>
           <li class="about-us-list__element">
-            <img class="about-us-list__image" src="./images/about_us/about_us_three.jpg" alt="Дизайн" height="294"
-              width="370">
+            <img srcset="
+                         ./images/about_us/direction-3-370.jpg 1x,
+                         ./images/about_us/direction-3-740.jpg 2x
+                         " src="./images/direction/direction-1-370.jpg" alt="Робота за компютером" width="370"
+              height="290" />
             <p class="about-us-list__caption">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -199,8 +208,21 @@
         <h2 class="section-caption">Наша команда</h2>
         <ul class="our-team-list">
           <li class="our-team-list__element">
-            <img class="our-team-list__image" src="./images/our_team/igor_demyanenko.jpg" alt="Ігор Дем'яненко"
-              height="260" width="270">
+            <picture>
+              <source srcset="
+                    ./images/our_team/team1-l.jpg    1x,
+                    ./images/our_team/team1-l@2x.jpg 2x
+                  " media="(min-width: 1200px)" />
+              <source srcset="
+                    ./images/our_team/team1-m.jpg    1x,
+                    ./images/our_team/team1-m@2x.jpg 2x
+                  " media="(min-width: 768px)" />
+              <source srcset="
+                    ./images/our_team/team1-s.jpg    1x,
+                    ./images/our_team/team1-s@2x.jpg 2x
+                  " media="(max-width: 767px)" />
+              <img src="./images/our_team/team1-s.jpg" alt="team-1" width="270" class="our-team-list__image" />
+            </picture>
             <div class="person-info">
               <h3 class="person-info__caption">Ігор Дем'яненко</h3>
               <p class="person-info__description">Product Designer</p>
@@ -238,8 +260,21 @@
           </li>
 
           <li class="our-team-list__element">
-            <img class="our-team-list__image" src="./images/our_team/olga_repina.jpg" alt="Ольга Рєпіна" height="260"
-              width="270">
+            <picture>
+              <source srcset="
+                                ./images/our_team/team2-l.jpg    1x,
+                                ./images/our_team/team2-l@2x.jpg 2x
+                              " media="(min-width: 1200px)" />
+              <source srcset="
+                                ./images/our_team/team2-m.jpg    1x,
+                                ./images/our_team/team2-m@2x.jpg 2x
+                              " media="(min-width: 768px)" />
+              <source srcset="
+                                ./images/our_team/team2-s.jpg    1x,
+                                ./images/our_team/team2-s@2x.jpg 2x
+                              " media="(max-width: 767px)" />
+              <img src="./images/our_team/team2-s.jpg" alt="team-1" width="270" class="our-team-list__image" />
+            </picture>
             <div class="person-info">
               <h3 class="person-info__caption">Ольга Рєпіна</h3>
               <p class="person-info__description">Frontend Developer</p>
@@ -277,8 +312,21 @@
           </li>
 
           <li class="our-team-list__element">
-            <img class="our-team-list__image" src="./images/our_team/mykola_tarasov.jpg" alt="Микола Тарасов"
-              height="260" width="270">
+            <picture>
+              <source srcset="
+                                            ./images/our_team/team3-l.jpg    1x,
+                                            ./images/our_team/team3-l@2x.jpg 2x
+                                          " media="(min-width: 1200px)" />
+              <source srcset="
+                                            ./images/our_team/team3-m.jpg    1x,
+                                            ./images/our_team/team3-m@2x.jpg 2x
+                                          " media="(min-width: 768px)" />
+              <source srcset="
+                                            ./images/our_team/team3-s.jpg    1x,
+                                            ./images/our_team/team3-s@2x.jpg 2x
+                                          " media="(max-width: 767px)" />
+              <img src="./images/our_team/team3-s.jpg" alt="team-1" width="270" class="our-team-list__image" />
+            </picture>
             <div class="person-info">
               <h3 class="person-info__caption">Микола Тарасов</h3>
               <p class="person-info__description">Marketing</p>
@@ -316,8 +364,22 @@
           </li>
 
           <li class="our-team-list__element">
-            <img class="our-team-list__image" src="./images/our_team/myhaylo_yermakov.jpg" alt="Михайло Єрмаков"
-              height="260" width="270">
+
+            <picture>
+              <source srcset="
+                       ./images/our_team/team4-l.jpg    1x,
+                       ./images/our_team/team4-l@2x.jpg 2x
+                     " media="(min-width: 1200px)" />
+              <source srcset="
+                       ./images/our_team/team4-m.jpg    1x,
+                       ./images/our_team/team4-m@2x.jpg 2x
+                     " media="(min-width: 768px)" />
+              <source srcset="
+                       ./images/our_team/team4-s.jpg    1x,
+                       ./images/our_team/team4-s@2x.jpg 2x
+                     " media="(max-width: 767px)" />
+              <img src="./images/our_team/team4-s.jpg" alt="team-1" width="270" class="our-team-list__image" />
+            </picture>
             <div class="person-info">
               <h3 class="person-info__caption">Михайло Єрмаков</h3>
               <p class="person-info__description">UI Designer</p>
