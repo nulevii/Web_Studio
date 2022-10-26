@@ -1,4 +1,4 @@
-# This is a home task for the eighths module of HTML+CSS Bootcamp
+# Web_Studio
 
 ## To check the final result please follow the link:
 
