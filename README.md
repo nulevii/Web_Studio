@@ -2,4 +2,4 @@
 
 ## To check the final result please follow the link:
 
-https://nulevii.github.io/goit-markup-hw-08/
+https://nulevii.github.io/Web_Studio/
